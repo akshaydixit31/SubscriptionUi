@@ -19,14 +19,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="VLa-eP-qCu">
-                        <rect key="frame" x="8" y="46" width="15" height="15"/>
+                        <rect key="frame" x="12" y="46" width="15" height="15"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="15" id="4HF-Ir-F3Z"/>
                             <constraint firstAttribute="height" constant="15" id="ZFB-Vg-eto"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQc-tZ-bOB">
-                        <rect key="frame" x="31" y="45" width="282" height="17"/>
+                        <rect key="frame" x="35" y="45" width="278" height="17"/>
                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -37,7 +37,7 @@
                     <constraint firstItem="qQc-tZ-bOB" firstAttribute="leading" secondItem="VLa-eP-qCu" secondAttribute="trailing" constant="8" id="G4M-zQ-9VV"/>
                     <constraint firstItem="VLa-eP-qCu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bsT-lm-p8c"/>
                     <constraint firstAttribute="trailing" secondItem="qQc-tZ-bOB" secondAttribute="trailing" constant="20" id="hgU-Pn-wc0"/>
-                    <constraint firstItem="VLa-eP-qCu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="qLg-Qz-bqs"/>
+                    <constraint firstItem="VLa-eP-qCu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="qLg-Qz-bqs"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="393" height="317.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icMembershipCardBlue" translatesAutoresizingMaskIntoConstraints="NO" id="RtF-uE-k0l">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icMembershipCardBlue" translatesAutoresizingMaskIntoConstraints="NO" id="RtF-uE-k0l">
                         <rect key="frame" x="10" y="10" width="373" height="298"/>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYG-Fr-doq">

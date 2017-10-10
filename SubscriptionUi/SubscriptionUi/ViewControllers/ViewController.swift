@@ -54,7 +54,7 @@ UITableViewDelegate {
                                                         
         }
         
-        cell.backgroundImage.layer.cornerRadius = 50
+        cell.backgroundImage.layer.cornerRadius = 10
         cell.buyNowButton.tag = indexPath.row
         cell.buyNowButton.layer.cornerRadius = 10
         cell.buyNowButton.addTarget(self,
@@ -108,12 +108,14 @@ UITableViewDelegate {
     
     @objc func showDetail(_ sender: UIButton){
         
-        guard let showDetailScene = self.storyboard?.instantiateViewController(withIdentifier: "ShowMemberShipDetailVcId") as? ShowMemberShipDetailVc else {
+        guard let showDetailScene = self.storyboard?.instantiateViewController(withIdentifier: "MemberShipDetailVcId") as? MemberShipDetailVc else {
             
             fatalError("")
             
         }
-        showDetailScene.index = sender.tag
+        let showMemberScene = ShowMemberShipDetailVc()
+        showMemberScene.index = sender.tag
+        
         self.navigationController?.pushViewController(showDetailScene,
                                                       animated: true)
         

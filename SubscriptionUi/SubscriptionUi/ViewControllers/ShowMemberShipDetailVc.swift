@@ -12,6 +12,7 @@ class ShowMemberShipDetailVc: UIViewController {
     
     //   MARK:- Outlet's ..
     
+    @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var titleImage: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var descriptionTableView: UITableView!
@@ -144,10 +145,23 @@ extension ShowMemberShipDetailVc {
     
     func uiConnerCut(){
         
+        self.titleImage.layer.cornerRadius = 10
         self.buyNowButtonOutlet.layer.cornerRadius = 5
-        self.descriptionTableView.layer.cornerRadius = 5
-        self.descriptionTableView.layer.borderWidth = 1
-        self.descriptionTableView.layer.borderColor = UIColor.lightGray.cgColor
+        self.backgroundView.layer.cornerRadius = 5
+        self.backgroundView.layer.borderWidth = 0.5
+        self.backgroundView.layer.borderColor = UIColor(red: 214.0/255.0,
+                                                        green: 214.0/255.0,
+                                                        blue: 214.0/255.0,
+                                                        alpha: 1.0).cgColor
+        backgroundView.layer.shadowColor = UIColor(red: 0.0/255.0,
+                                                   green: 0.0/255.0,
+                                                   blue: 0.0/255.0,
+                                                   alpha: 1.0).cgColor
+        backgroundView.layer.shadowOpacity = 1.9
+        backgroundView.layer.shadowOffset = CGSize.zero
+        backgroundView.layer.shadowRadius = 0.1
+        
+       
         
     }
     

@@ -96,7 +96,7 @@ UITableViewDelegate {
     func tableView(_ tableView: UITableView,
                    heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 300
+        return UIScreen.main.bounds.height / 2.5
         
     }
     
@@ -113,8 +113,8 @@ UITableViewDelegate {
             fatalError("")
             
         }
-        let showMemberScene = ShowMemberShipDetailVc()
-        showMemberScene.index = sender.tag
+        
+        showDetailScene.index = sender.tag
         
         self.navigationController?.pushViewController(showDetailScene,
                                                       animated: true)

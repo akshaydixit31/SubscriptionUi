@@ -19,14 +19,15 @@ class MemberShipDetailVc: UIViewController {
     
     // MARK:- Variable's..
     
+    var index = 0
     var proMemberShip = ShowMemberShipDetailVc()
     var platinumMemberShip = ShowMemberShipDetailVc()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(self.index)
         setUpSubView()
-    
+        
     }
     
     override func viewWillLayoutSubviews() {
@@ -75,6 +76,14 @@ class MemberShipDetailVc: UIViewController {
         
         proMemberShip.didMove(toParentViewController: self)
         platinumMemberShip.didMove(toParentViewController: self)
+        
+        if self.index == 1 {
+        
+        scrollView.setContentOffset(CGPoint(x: UIScreen.main.bounds.width,
+                                            y: 0),
+                                    animated: false)
+            
+        }
         
     }
     

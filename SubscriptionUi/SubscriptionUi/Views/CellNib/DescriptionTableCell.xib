@@ -21,8 +21,12 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="VLa-eP-qCu">
                         <rect key="frame" x="12" y="46" width="15" height="15"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="15" id="4HF-Ir-F3Z"/>
-                            <constraint firstAttribute="height" constant="15" id="ZFB-Vg-eto"/>
+                            <constraint firstAttribute="width" constant="15" id="4HF-Ir-F3Z">
+                                <variation key="heightClass=regular-widthClass=regular" constant="22.5"/>
+                            </constraint>
+                            <constraint firstAttribute="height" constant="15" id="ZFB-Vg-eto">
+                                <variation key="heightClass=regular-widthClass=regular" constant="22.5"/>
+                            </constraint>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQc-tZ-bOB">
@@ -30,6 +34,9 @@
                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="21"/>
+                        </variation>
                     </label>
                 </subviews>
                 <constraints>
